@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy</title>
+
+    <style>
+        .producto {
+            position: relative;
+            width: 200px;
+            border: 1px solid #c7bdb8;
+            border-radius: 7px;
+            padding: 10px;
+        }
+
+        .color-marca {
+            color: #1a1a1a;
+            font-weight: 10px;
+        }
+
+        .color-descrip {
+            color: #473d38;
+        }
+
+        .precio {
+            color: black;
+        }
+
+        .precio-orig {
+            color: #3e3e3e
+        }
+
+        .cuotas {
+            font-weight: bolder;
+            color: white;
+            position: absolute;
+            background-color: dodgerblue;
+            top: 26%;
+            left: 10px;
+            padding: 2px;
+            border-radius: 7px;
+        }
+
+
+
+        .descuento {
+            background-color: #0097FF;
+            color: white;
+            border-radius: 7px;
+            padding: 5px;
+            font-weight: bolder;
+        }
+
+        button {
+            border-radius: 90px;
+            padding: 10px;
+            background: rgb(245, 210, 12);
+            width: 100%;
+        }
+
+        .container-desc {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .font-weight {
+            font-weight: 500px;
+        }
+
+        .precio-ant {
+            text-decoration: line-through;
+        }
+
+        .cuota {
+            font-weight: bolder;
+            font-size: 1.5em;
+            padding: 7px;
+        }
+
+        .cant-cuotas {
+            display: flex;
+            gap: 5px;
+        }
+
+        .ojo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 150px;
+            background-color: rgb(204, 202, 202);
+            border-radius: 5px;
+        }
+
+        .vista {
+            color: #0097FF;
+        }
+
+        .container-eye {
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+        }
+
+        .producto:hover .container-eye {
+            opacity: 1;
+        }
+
+        .corazon {
+            display: flex;
+            justify-content: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="producto">
+
+            <div class="corazon">
+                <img src="corazon.svg" width="25px" alt="">
+            </div>
+
+            <div>
+                <img src="latex-weekend.webp" width="100%" alt="">
+            </div>
+
+            <div class="cuotas">
+                <div>
+                    <span>
+                        HASTA
+                    </span>
+
+                </div>
+
+                <div class="cant-cuotas">
+                    <span class="cuota">
+                        18
+                    </span>
+
+                    <span>
+                        SIN <br> INTERES
+                    </span>
+                </div>
+            </div>
+
+            <div class="container-eye">
+                <div class="ojo">
+                    <div>
+                        <img src="eye.png" width="25px" alt="">
+                    </div>
+
+                    <div>
+                        <p class="vista">
+                            Vista rápida
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="color-marca">
+                <span>
+                    <b>
+                        Sherwin Williams
+                    </b>
+                </span>
+            </div>
+
+            <div class="color-descrip">
+                <span>
+                    Látex Exterior Interior Mate Weekend 20 L Sherwin Williams
+                </span>
+            </div>
+
+            <div class="container-desc">
+                <div class="descuento">
+                    <span>
+                        -20%
+                    </span>
+                </div>
+
+                <div class="precio-desc">
+                    <span class="precio-ant">
+                        $99.585
+                    </span>
+                </div>
+            </div>
+
+            <div class="precio">
+                <p>
+                    <b>
+                        $79.668
+                    </b>
+                </p>
+            </div>
+
+            <div>
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .productos {
+            position: relative;
+            width: 200px;
+        }
+
+        .oferta {
+            position: absolute;
+            bottom: 20px;
+            right: 16px;
+            padding: 5px;
+            border: solid;
+            background-color: aqua;
+        }
+
+        .enlace {
+            color: burlywood;
+            transition: color 0.5s ease;
+        }
+
+        .enlace:hover {
+            color: black;
+            background-color: brown;
+            font-size: 2.5em;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <main>
+        <div>
+            <h3>
+                Ejemplos de position
+            </h3>
+        </div>
+
+        <div class="productos">
+
+            <div>
+                <img src="https://picsum.photos/200" alt="">
+            </div>
+
+            <div class="oferta">
+                <span>
+                    Oferta
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <a href="" class="enlace">Comprar</a>
+        </div>
+    </main>
+    
+</body>
+</html>
