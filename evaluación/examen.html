@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación</title>
+</head>
+<style>
+    body {
+        background-color: white;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .imagen {
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        border: 3px solid blue;
+    }
+    .redsoc {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        color: grey;
+    }
+
+    .tarjeta-ana {
+        border-radius: 10px;
+        background-color: ghostwhite;
+        border: solid 1px;
+        gap: 15px;
+        padding: 30px;
+
+    }
+
+    .tarjeta-mina {
+        border-radius: 10px;
+        background-color: ghostwhite;
+        border: solid 1px;
+        padding: 30px;
+
+    }
+
+    .line {
+        background-color: green;
+        border-radius: 10px;
+        position: fixed;
+        top: 20px;
+        left: 250px;
+    }
+
+    .offline {
+        background-color: red;
+        border-radius: 10px;
+        position: fixed;
+        top: 20px;
+        right: 1150px;
+    }
+
+
+
+    .tarjetas {
+        display: flex;
+        gap: 30px;
+        /*justify-content: space-evenly;*/
+        position: relative;
+    }
+
+    .nombre {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profesion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .descrip {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-mina {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-ana {
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton {
+        background-color: deepskyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        border-radius: 40px;
+        border: 2px solid deepskyblue;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+
+    }
+
+    .contactar-color {
+        color: white;
+    } 
+</style>
+
+<body>
+    <main>
+        <div class="tarjetas">
+
+            <div class="tarjeta-ana"> <!--Ana garcía-->
+
+                <div class="line">
+                    <span>
+                        Online
+                    </span>
+                </div>
+
+                <div class="img-ana">
+                    <img class="imagen" src="150.png" width="150px" alt="">
+                </div>
+
+                <div class="nombre">
+                    <h2>
+                        <b>
+                            Ana García
+                        </b>
+                    </h2>
+                </div>
+
+                <div class="profesion">
+                    <span>
+                        Desarrolladora Web Frontend
+                    </span>
+                </div>
+
+                <div class="descrip">
+                    <p>
+                        Apasionada por crear experiencias <br> web increibles para toda la <br> comunidad de Río Negro.
+                    </p>
+                </div>
+
+                <div class="redsoc">
+                    <div>
+                        <a href=""><img src="twitter.png" width="25px" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img src="descarga.png" width="25px" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img src="github-icon-2.svg" width="25px" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-mina"> <!--mina murray-->
+
+                <div class="offline">
+                    <span>
+                        Offline
+                    </span>
+                </div>
+
+                <div class="img-mina">
+                    <img class="imagen" src="150.png" width="150px" alt="">
+                </div>
+
+                <div class="nombre">
+                    <h2>
+                        <b>
+                            Mina Murray
+                        </b>
+                    </h2>
+                </div>
+
+                <div class="profesion">
+                    <span>
+                        Backend Developer
+                    </span>
+                </div>
+
+                <div class="descrip">
+                    <p>
+                        Experiencia desarrollando micro- <br> servicios y servicios REST. <br> Experiencia en AWS
+                    </p>
+                </div>
+
+                <div class="redsoc">
+                    <div>
+                        <a href=""><img src="twitter.png" width="25px" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img src="descarga.png" width="25px" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img src="github-icon-2.svg" width="25px" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <button class="boton">
+            <img src="correo.png" width="30px" alt="">
+            <p class="contactar-color">
+                Contactar
+            </p>
+        </button>
+
+    </main>
+</body>
+
+</html>
