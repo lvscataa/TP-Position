@@ -13,6 +13,8 @@
 
     main {
         padding: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .imagen {
@@ -21,6 +23,7 @@
         justify-content: center;
         border: 3px solid blue;
     }
+
     .redsoc {
         display: flex;
         gap: 40px;
@@ -30,53 +33,35 @@
 
     span {
         color: grey;
-    }
-
-    .tarjeta-ana {
-        border-radius: 10px;
-        background-color: ghostwhite;
-        border: solid 1px;
-        gap: 15px;
-        padding: 30px;
-
-    }
-
-    .tarjeta-mina {
-        border-radius: 10px;
-        background-color: ghostwhite;
-        border: solid 1px;
-        padding: 30px;
-
-    }
+    }   
 
     .line {
         background-color: green;
         border-radius: 10px;
-        position: fixed;
+        position: absolute;
         top: 20px;
-        left: 250px;
+        right: 10px;
     }
 
     .offline {
         background-color: red;
         border-radius: 10px;
-        position: fixed;
+        position: absolute;
         top: 20px;
-        right: 1150px;
+        right: 0;
     }
 
 
-
+    
     .tarjetas {
         display: flex;
         gap: 30px;
-        /*justify-content: space-evenly;*/
-        position: relative;
     }
-
+    
     .nombre {
         display: flex;
         justify-content: center;
+        
     }
 
     .profesion {
@@ -89,16 +74,11 @@
         justify-content: center;
     }
 
-    .img-mina {
+    .img-tarjeta {
         display: flex;
         justify-content: center;
     }
-
-    .img-ana {
-        display: flex;
-        justify-content: center;
-    }
-
+    
     .boton {
         background-color: deepskyblue;
         display: flex;
@@ -110,19 +90,26 @@
         position: fixed;
         bottom: 20px;
         right: 10px;
-
     }
 
     .contactar-color {
         color: white;
-    } 
+    }
+
+    .tarjeta {
+        border-radius: 10px;
+        background-color: ghostwhite;
+        border: solid 1px;
+        position: relative;
+        padding: 30px;
+    }
 </style>
 
 <body>
     <main>
         <div class="tarjetas">
 
-            <div class="tarjeta-ana"> <!--Ana garcía-->
+            <div class="tarjeta"> <!--Ana garcía-->
 
                 <div class="line">
                     <span>
@@ -130,7 +117,7 @@
                     </span>
                 </div>
 
-                <div class="img-ana">
+                <div class="img-tarjeta">
                     <img class="imagen" src="150.png" width="150px" alt="">
                 </div>
 
@@ -169,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="tarjeta-mina"> <!--mina murray-->
+            <div class="tarjeta"> <!--mina murray-->
 
                 <div class="offline">
                     <span>
@@ -177,7 +164,7 @@
                     </span>
                 </div>
 
-                <div class="img-mina">
+                <div class="img-tarjeta">
                     <img class="imagen" src="150.png" width="150px" alt="">
                 </div>
 
